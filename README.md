@@ -10,7 +10,7 @@
 ###使用方法
 > 	首先需要一个XMidiTrackUnit对象来存储Track和控制播放。
 
-```
+```javascript
  class XMidiTrackUnit{
         //频道ID
         var trackID:Int = 0
@@ -22,7 +22,8 @@
 ```
 
 > 定义需要的变量
-```
+
+```javascript
         //MIDI解析API
         var musicSequence:XMidiSequence!
         //Track数组，用于存储解析出来的Track
@@ -31,7 +32,8 @@
         var playTimeStamp:NSTimeInterval = 0
 ```
 >读取并解析文件
-```
+
+```javascript
         //读取文件
         var filePath = NSBundle.mainBundle().pathForResource(midi.fileName, ofType: "mid")
         var url = NSURL(fileURLWithPath: filePath!)
@@ -60,7 +62,8 @@
 ```
 
 >启动时间轴，播放音乐，这里需要注意需要计算bpm对时间轴速度的影响。updateGame方法控制在1/60秒执行一次即可。
-```
+
+```javascript
     //刷新事件
     override func update(currentTime: CFTimeInterval) {
         var timeSinceLast:CFTimeInterval = currentTime - self.lastUpdateTimeInterval
@@ -110,4 +113,3 @@
         }
     }
 ```
-
