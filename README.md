@@ -7,8 +7,15 @@
 >     播放控制没有对制作应接口，主要是考虑大家可以自行控制播放。
 
 
-###使用方法
-> 	首先需要一个XMidiTrackUnit对象来存储Track和控制播放。
+###API初始化方法
+```javascript
+    //初始化声音数据
+    XOpenAL.initDevice()
+    XSoundFile.initSoundData()
+```
+
+###音乐播放控制方法
+> 	先要定义一个XMidiTrackUnit对象来存储Track和控制播放。
 
 ```javascript
  class XMidiTrackUnit{
