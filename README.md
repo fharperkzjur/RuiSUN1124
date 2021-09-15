@@ -17,21 +17,21 @@
 ![AD](http://img1.ph.126.net/imgkyxAM-XEboVfJ_aTYZA==/649081296312690109.jpg)
 
 ###更新履历
->2015-03-18
+####2015-03-18
 >1.增加XMidiPlayer，现在播放MIDI文件更为方便。
 
->2015-03-17
+####2015-03-17
 >1.初次版本发布。
 
 ###使用方法
->1.初始化API
+####1.初始化API
 ```javascript
     //初始化声音数据
     XOpenAL.initDevice()
     XSoundFile.initSoundData()
 ```
 
->2.播放MIDI文件
+####2.播放MIDI文件
 ```javascript
     //读取文件
     var filePath = NSBundle.mainBundle().pathForResource("midiFileName", ofType: "mid")
