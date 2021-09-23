@@ -47,7 +47,7 @@
     midiPlayer.play()
 ```
 
-###3.播放控制API
+###3.XMidiPlayer播放控制API
 ```javascript
 //暂停
 -(void)pause;
