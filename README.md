@@ -11,7 +11,7 @@
 >     交流群:334533178
 
 ###视频演示
-[Demo 视频截这里](http://v.youku.com/v_show/id_XOTEzMTc0MTYw.html)
+>[Demo 视频截这里](http://v.youku.com/v_show/id_XOTEzMTc0MTYw.html)
 
 ###Demo截图
 >![AD](http://img1.ph.126.net/iXCESSxlr8pTC7d2V6OwnQ==/2773372945548026299.jpg)
