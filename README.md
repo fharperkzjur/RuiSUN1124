@@ -52,18 +52,18 @@
 
 ###3.XMidiPlayer播放控制API
 ```javascript
-//暂停
--(void)pause;
+    //暂停
+    -(void)pause;
 
-//播放、继续播放
--(void)play;
+    //播放、继续播放
+    -(void)play;
 
-//重播
--(void)replay;
+    //重播
+    -(void)replay;
 
-//获取当前播放进度 返回一个0～1的一个小数，代表进度百分比
--(double)getProgress;
+    //获取当前播放进度 返回一个0～1的一个小数，代表进度百分比
+    -(double)getProgress;
 
-//设置当前播放进度 progress是一个0～1的一个小数，代表进度百分比
--(void)setProgress:(double)progress;
+    //设置当前播放进度 progress是一个0～1的一个小数，代表进度百分比
+    -(void)setProgress:(double)progress;
 ```
