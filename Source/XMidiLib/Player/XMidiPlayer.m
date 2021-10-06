@@ -68,6 +68,29 @@ double lastUpdateTime;
     [self setProgress:0];
 }
 
+-(double)totalTime{
+    if (midiSequence == NULL){
+        return 0;
+    }
+    return midiSequence.musicTotalTime;
+}
+
+-(double)time{
+    if (midiSequence == NULL){
+        return 0;
+    }
+    return currentMusitTime;
+}
+
+-(void)setTime:(double)newValue{
+    if (midiSequence == NULL){
+        return;
+    }
+    
+    double progress = newValue / midiSequence.musicTotalTime;
+    [self setProgress:progress];
+}
+
 -(double)getProgress{
     return currentMusitTime / midiSequence.musicTotalTime;
 }
