@@ -90,3 +90,9 @@
     //关闭播放器
     -(void)closePlayer;
 ```
+
+###5.XMidiPlayer委托事件
+```javascript
+    //播放进度变化 progress是一个0～1的一个小数，代表进度百分比
+    + (void)progressChanged:(double)progress;
+```
