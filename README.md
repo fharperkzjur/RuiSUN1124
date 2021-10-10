@@ -21,6 +21,11 @@
 >![AD](http://img1.ph.126.net/imgkyxAM-XEboVfJ_aTYZA==/649081296312690109.jpg)
 
 ###更新履历
+####2015-05-18
+>1.更新至1.2版本。
+>2.代码整合和优化，现在XMIDI所有代码都在XMidiLib目录下。
+>3.XMidiPlayer方法更新。
+
 ####2015-03-22
 >1.增加播放控制。
 
@@ -33,37 +38,61 @@
 ###使用方法
 ####1.初始化API
 ```javascript
-    //初始化声音数据
-    XOpenAL.initDevice()
-    XSoundFile.initSoundData()
+    //初始化，会将音频加载到内存，如果资源释放后，再播放，需要重新初始化。
+    XMidiPlayer.xInit()
 ```
 
-####2.播放MIDI文件
+####2.资源释放API
+```javascript
+    //资源释放，不必每次播放完都去释放资源，只有在你觉得需要时释放即可。
+    XMidiPlayer.xDispose()
+```
+
+####3.播放MIDI示例
 ```javascript
     //读取文件
     var filePath = NSBundle.mainBundle().pathForResource("midiFileName", ofType: "mid")
+
+    //根据URL播放MIDI
     var url = NSURL(fileURLWithPath: filePath!)
-        
-    //MIDI Player
     var midiPlayer:XMidiPlayer = XMidiPlayer()
     midiPlayer.initMidi(url!)
     midiPlayer.play()
+
+    //根据Data播放MIDI
+    var data = NSFileManager.defaultManager().contentsAtPath(filePath!)
+    var midiPlayer:XMidiPlayer = XMidiPlayer()
+    midiPlayer.initMidiWithData(data)
+    midiPlayer.play()
 ```
 
-###3.XMidiPlayer播放控制API
+###4.XMidiPlayer播放控制API
 ```javascript
+    //开启播放设备
+    +(void)xInit;
+    //关闭播放设备
+    +(void)xDispose;
+
+    //初始化MIDI URL
+    -(void)initMidi:(NSURL*)midiUrl;
+    //初始化MIDI Data
+    -(void)initMidiWithData:(NSData*)data;
     //暂停
     -(void)pause;
-
     //播放、继续播放
     -(void)play;
-
     //重播
     -(void)replay;
-
     //获取当前播放进度 返回一个0～1的一个小数，代表进度百分比
     -(double)getProgress;
-
     //设置当前播放进度 progress是一个0～1的一个小数，代表进度百分比
     -(void)setProgress:(double)progress;
+    //关闭播放器
+    -(void)closePlayer;
+```
+
+###5.XMidiPlayer委托事件
+```javascript
+    //播放进度变化 progress是一个0～1的一个小数，代表进度百分比
+    + (void)progressChanged:(double)progress;
 ```
