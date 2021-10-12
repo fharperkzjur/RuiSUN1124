@@ -19,9 +19,9 @@
 @interface XMidiPlayer : NSObject <XMidiPlayerDelegate>
 @property (nonatomic) id<XMidiPlayerDelegate> delegate;
 @property (nonatomic) double currentBpm;
-//Midi总播放时间
+//Midi总播放时间(秒)
 @property (nonatomic,readonly) double totalTime;
-//Midi当前播放时间点
+//Midi当前播放时间点(秒)
 @property (nonatomic) double time;
 
 //开启播放设备
