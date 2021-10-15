@@ -68,6 +68,11 @@
 
 ###4.XMidiPlayer播放控制API
 ```javascript
+    //Midi总播放时间(秒)
+    @property (nonatomic,readonly) double totalTime;
+    //Midi当前播放时间点(秒)
+    @property (nonatomic) double time;
+
     //开启播放设备
     +(void)xInit;
     //关闭播放设备
