@@ -73,11 +73,6 @@
     //Midi当前播放时间点(秒)
     @property (nonatomic) double time;
 
-    //开启播放设备
-    +(void)xInit;
-    //关闭播放设备
-    +(void)xDispose;
-
     //初始化MIDI URL
     -(void)initMidi:(NSURL*)midiUrl;
     //初始化MIDI Data
