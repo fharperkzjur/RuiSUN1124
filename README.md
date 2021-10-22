@@ -14,11 +14,11 @@
 >[音效演示视频截这里](http://v.youku.com/v_show/id_XOTEzMTc0MTYw.html)
 
 ###Demo截图
->![AD](http://img1.ph.126.net/iXCESSxlr8pTC7d2V6OwnQ==/2773372945548026299.jpg)
+>![AD](http://git.oschina.net/uploads/images/2015/0519/002136_1a65a0dc_21807.jpeg "AD")
 
 ###插播广告
 >   给自己游戏做个宣传，欢迎大家下载
->![AD](http://img1.ph.126.net/imgkyxAM-XEboVfJ_aTYZA==/649081296312690109.jpg)
+>![AD](http://git.oschina.net/uploads/images/2015/0519/002155_e5b0be86_21807.jpeg "AD")
 
 ###更新履历
 ####2015-05-18
