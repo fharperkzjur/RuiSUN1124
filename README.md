@@ -16,10 +16,6 @@
 ###Demo截图
 >![AD](http://git.oschina.net/uploads/images/2015/0519/002136_1a65a0dc_21807.jpeg "AD")
 
-###插播广告
->   给自己游戏做个宣传，欢迎大家下载
->![AD](http://git.oschina.net/uploads/images/2015/0519/002155_e5b0be86_21807.jpeg "AD")
-
 ###更新履历
 ####2015-05-18
 >1. 更新至1.2版本。
